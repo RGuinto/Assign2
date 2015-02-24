@@ -71,6 +71,9 @@ RocknCoder.Pages.calculator = function(){
 				case "keyEquals":
 					RocknCoder.Display.setOperator("=");
 					break;
+				case "keyModulo":
+					RocknCoder.Display.setOperator("%");
+					break;
 			}
 			return false;
 		});
@@ -108,6 +111,9 @@ RocknCoder.Display = function() {
 		subtract = function(x, y) {
 			return x - y;
 		},
+		modulo = function(x, y){
+			return x%y;
+		},
 		calculate = function() {
 			if (!operator || accumulator == null) return;
 			var currNumber = parseFloat($displayControl.value),
@@ -125,6 +131,9 @@ RocknCoder.Display = function() {
 					break;
 				case "/":
 					newVal = divide(accumulator, currNumber);
+					break;
+				case "%":
+					newVal = modulo(accumulator, currNumber);
 					break;
 			}
 			setValue(newVal);

@@ -1,6 +1,6 @@
 .button {
-	height: 80px;
-	width: 180px;
+	height: 6em;
+	width: 10em;
 	cursor: pointer;
 	margin: 50px auto;
 }
@@ -48,7 +48,7 @@
 }
 .button .outer .height .inner {
 	line-height: 2.8em;
-	font-size: 30px;
+	font-size: 2em;
 	letter-spacing: .05em;
 	position: relative;
 	height: 100%;
