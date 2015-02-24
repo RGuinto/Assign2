@@ -2,64 +2,86 @@
 
 <html>
 <head>
-	<title>Awesomeculator by Salehen's Disciples. Calculaor by JQM.</title>
+	<title>Calculator App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
-	<!--<link href="content/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css" />-->
 	<link href="content/index.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400, 700' rel='stylesheet' type='text/css'>
 	<script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
 </head>
 <body>
-	<div id="calculator" data-role="page" data-theme="a" data-rockncoder-jspage="calculator">
-		<header data-role="header">
-			<h1 style="text-align:center;">-----</h1>
-		</header>
-		<section data-role="content" >
-			<input type="text"  id="displayControl" style="text-align: right;" value="0" />
-			<div class="ui-grid-a">
-
-				<div class="ui-block-a"><button data-theme="b" id="keyC" data-rockncoder-tag="C" style="background-color: transparent; border:none; "><div class="button"><div class="outer"><div class="height"><div class="inner">C</div></div></div></div></button></div>
-
-				<div class="ui-block-b"><button data-theme="b" id="keyCe" data-rockncoder-tag="CE" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">CE</div></div></div></div></button></div>
-
+	<div id="calculator" class="page" data-role="page" data-theme="a" data-rockncoder-jspage="calculator">
+		<!-- <header data-role="header">
+			<h1>Awesomeculator</h1>
+		</header> -->
+		<div class="contentBox" data-role="content" >
+			<input type="text" disabled="disabled" id="displayControl" value="0" />
+			<div class="contentBox-grid-row1">
+				<div class="contentBox-grid-row1-column">
+					<button class="btn" data-theme="b" id="keyC" data-rockncoder-tag="C">C</button>
+				</div>
+				<div class="contentBox-grid-row1-column">
+					<button class="btn" data-theme="b" id="keyCe" data-rockncoder-tag="CE">CE</button>
+				</div>
 			</div>
-			<div class="ui-grid-c">
-				<div class="ui-block-a"><button data-theme="b" id="key7" data-rockncoder-tag="7" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">7</div></div></div></div></button></div>
-
-				<div class="ui-block-b"><button data-theme="b" id="key8" data-rockncoder-tag="8" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">8</div></div></div></div></button></div>
-
-				<div class="ui-block-c"><button data-theme="b" id="key9" data-rockncoder-tag="9" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">9</div></div></div></div></button></div>
-
-				<div class="ui-block-d"><button data-theme="e" id="keyDivide" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">/</div></div></div></div></button></div>
-
-				<div class="ui-block-a"><button data-theme="b" id="key4" data-rockncoder-tag="4" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">4</div></div></div></div></button></div>
-
-				<div class="ui-block-b"><button data-theme="b" id="key5" data-rockncoder-tag="5" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">5</div></div></div></div></button></div>
-
-				<div class="ui-block-c"><button data-theme="b" id="key6" data-rockncoder-tag="6" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">6</div></div></div></div></button></div>
-
-				<div class="ui-block-d"><button data-theme="e" id="keyMultiply" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">*</div></div></div></div></button></div>
-
-				<div class="ui-block-a"><button data-theme="b" id="key1" data-rockncoder-tag="1" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">1</div></div></div></div></button></div>
-
-				<div class="ui-block-b"><button data-theme="b" id="key2" data-rockncoder-tag="2" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">2</div></div></div></div></button></div>
-
-				<div class="ui-block-c"><button data-theme="b" id="key3" data-rockncoder-tag="3" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">3</div></div></div></div></button></div>
-
-				<div class="ui-block-d"><button data-theme="e" id="keySubtract" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">-</div></div></div></div></button></div>
-
-				<div class="ui-block-a"><button data-theme="e" id="keyDecimalPoint" data-rockncoder-tag="." style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">.</div></div></div></div></button></div>
-
-				<div class="ui-block-b"><button data-theme="b" id="key0" data-rockncoder-tag="0" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">0</div></div></div></div></button></div>
-
-				<div class="ui-block-c"><button data-theme="e" id="keyEquals" style="background-color: transparent; border:none;"><div class="button"><div class="outer"><div class="height"><div class="inner">=</div></div></div></div></button></div>
-
-				<div class="ui-block-d"><button data-theme="e" id="keyAdd" style="background-color: transparent; border:none;";><div class="button" ><div class="outer"><div class="height" style="background:#CCBF88;"><div class="inner" style="background:linear-gradient(#ffefaa,#ffe155);">+</div></div></div></div></button></div>
-
-				<div class="ui-block-a"><button data-theme="e" id="keyModulo" style="background-color: transparent; border:none;";><div class="button" ><div class="outer"><div class="height" style="background:#CCBF88;"><div class="inner" style="background:linear-gradient(#ffefaa,#ffe155);">%</div></div></div></div></button></div>
+			<div class="contentBox-grid-row2">
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key7" data-rockncoder-tag="7">7</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key8" data-rockncoder-tag="8" >8</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key9" data-rockncoder-tag="9" >9</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn2" data-theme="e" id="keyDivide" >/</button>
+				</div>
 			</div>
-		</section>
+			<div class="contentBox-grid-row3">
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn"data-theme="b" id="key4" data-rockncoder-tag="4" >4</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key5" data-rockncoder-tag="5" >5</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key6" data-rockncoder-tag="6" >6</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn2" data-theme="e" id="keyMultiply" >*</button>
+				</div>
+			</div>
+			<div class="contentBox-grid-row3">
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key1" data-rockncoder-tag="1" >1</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key2" data-rockncoder-tag="2" >2</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key3" data-rockncoder-tag="3" >3</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn2" data-theme="e" id="keySubtract" >-</button>
+				</div>
+			</div>
+			<div class="contentBox-grid-row3">
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="e" id="keyDecimalPoint" data-rockncoder-tag=".">.</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="b" id="key0" data-rockncoder-tag="0" >0</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn" data-theme="e" id="keyEquals" >=</button>
+				</div>
+				<div class="contentBox-grid-row1-column2">
+					<button class="btn2"data-theme="e" id="keyAdd" >+</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="scripts/hideAddressBar.js" type="text/javascript"></script>
 	<script src="scripts/app.js" type="text/javascript"></script>
