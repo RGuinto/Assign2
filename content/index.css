@@ -164,3 +164,7 @@ header{
 	display: block;
 
 }
+
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
+overflow: hidden;
+}
