@@ -168,3 +168,19 @@ header{
 .ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
 overflow: hidden;
 }
+
+.ui-grid-a .ui-block-a {
+clear: left;
+}
+
+.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b {
+width: 50%;
+}
+
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+margin: 0;
+padding: 0;
+border: 0;
+float: left;
+min-height: 1px;
+}
