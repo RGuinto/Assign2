@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Calculator App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="content/index.css" rel="stylesheet" type="text/css" />
+
+		<script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="scripts/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="calculator" class="page" data-role="page" data-theme="a" data-rockncoder-jspage="calculator">
+			<div class="contentBox" data-role="content">
+				<input type="text" id="displayControl" class="display" value="0" />
+				<div class="contentBox-grid-row1">
+					<div class="contentBox-grid-row1-column">
+						<button class="btn" data-theme="b" id="keyC" data-rockncoder-tag="C">C</button>
+					</div>
+					<div class="contentBox-grid-row1-column">
+						<button class="btn" data-theme="b" id="keyCe" data-rockncoder-tag="CE">CE</button>
+					</div>
+				</div>
+
+				<div class="contentBox-grid-row2">
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="7" data-rockncoder-tag="7">7</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="8" data-rockncoder-tag="8">8</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="9" data-rockncoder-tag="9">9</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="/" data-rockncoder-tag="/">/</button>
+					</div>
+				</div>
+
+				<div class="contentBox-grid-row3">
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="4" data-rockncoder-tag="4">4</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="5" data-rockncoder-tag="5">5</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="6" data-rockncoder-tag="6">6</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="*" data-rockncoder-tag="*">*</button>
+					</div>
+				</div>
+
+				<div class="contentBox-grid-row3">
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="1" data-rockncoder-tag="1">1</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="2" data-rockncoder-tag="2">2</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="3" data-rockncoder-tag="3">3</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="-" data-rockncoder-tag="-">-</button>
+					</div>
+				</div>
+
+				<div class="contentBox-grid-row3">
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="." data-rockncoder-tag=".">.</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="0" data-rockncoder-tag="0">0</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="=" data-rockncoder-tag="=">=</button>
+					</div>
+					<div class="contentBox-grid-row1-column2">
+						<button class="btn" data-theme="b" id="+" data-rockncoder-tag="+">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/hideAddressBar.js" type="text/javascript"></script>
+		<script src="scripts/app.js" type="text/javascript"></script>
+	</body>
+</html>
