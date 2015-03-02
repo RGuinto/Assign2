@@ -38,7 +38,7 @@
 					<button class="btn animated zoomIn" button onclick="loadContent(1)" data-theme="b" id="key9" data-rockncoder-tag="9" >9</button>
 				</div>
 				<div class="contentBox-grid-row1-column2">
-					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="divide" >/</button>
+					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="keyDivide" >/</button>
 				</div>
 			</div>
 			<div class="contentBox-grid-row3">
@@ -52,7 +52,7 @@
 					<button class="btn animated zoomIn" button onclick="loadContent(1)" data-theme="b" id="key6" data-rockncoder-tag="6" >6</button>
 				</div>
 				<div class="contentBox-grid-row1-column2">
-					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="multiply" >*</button>
+					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="keyMultiply" >*</button>
 				</div>
 			</div>
 			<div class="contentBox-grid-row3">
@@ -66,7 +66,7 @@
 					<button class="btn animated zoomIn" button onclick="loadContent(1)" data-theme="b" id="key3" data-rockncoder-tag="3" >3</button>
 				</div>
 				<div class="contentBox-grid-row1-column2">
-					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="subtract" >-</button>
+					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="keySubtract" >-</button>
 				</div>
 			</div>
 			<div class="contentBox-grid-row3">
@@ -77,10 +77,10 @@
 					<button class="btn animated zoomIn" button onclick="loadContent(1)" data-theme="b" id="key0" data-rockncoder-tag="0" >0</button>
 				</div>
 				<div class="contentBox-grid-row1-column2">
-					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="equal" >=</button>
+					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="keyEquals" >=</button>
 				</div>
 				<div class="contentBox-grid-row1-column2">
-					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="add" >+</button>
+					<button class="btn2 animated zoomIn" button onclick="loadContent(1)" data-theme="e" id="keyAdd" >+</button>
 				</div>
 			</div>
 		</div>
@@ -90,37 +90,37 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-    	$("#add").click(function(){
-        	$("#add").removeClass("animated zoomIn");
-        	$("#add").addClass("animated pulse");
+    	$("#keyAdd").click(function(){
+        	$("#keyAdd").removeClass("animated zoomIn");
+        	$("#keyAdd").addClass("animated pulse");
     	});
 	});
 
 	$(document).ready(function(){
-    	$("#subtract").click(function(){
-        	$("#subtract").removeClass("animated zoomIn");
-        	$("#subtract").addClass("animated pulse");
+    	$("#keySubtract").click(function(){
+        	$("#keySubtract").removeClass("animated zoomIn");
+        	$("#keySubtract").addClass("animated pulse");
     	});
 	});
 
 	$(document).ready(function(){
-    	$("#multiply").click(function(){
-        	$("#multiply").removeClass("animated zoomIn");
-        	$("#multiply").addClass("animated pulse");
+    	$("#keyMultiply").click(function(){
+        	$("#keyMultiply").removeClass("animated zoomIn");
+        	$("#keyMultiply").addClass("animated pulse");
     	});
 	});
 
 	$(document).ready(function(){
-    	$("#divide").click(function(){
-        	$("#divide").removeClass("animated zoomIn");
-        	$("#divide").addClass("animated pulse");
+    	$("#keyDivide").click(function(){
+        	$("#keyDivide").removeClass("animated zoomIn");
+        	$("#keyDivide").addClass("animated pulse");
     	});
 	});	
 
 	$(document).ready(function(){
-    	$("#equal").click(function(){
-        	$("#equal").removeClass("animated zoomIn");
-        	$("#equal").addClass("animated pulse");
+    	$("#keyEquals").click(function(){
+        	$("#keyEquals").removeClass("animated zoomIn");
+        	$("#keyEquals").addClass("animated pulse");
     	});
 	});	
 
